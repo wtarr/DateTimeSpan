@@ -1,0 +1,15 @@
+﻿<Window x:Class="DateTimeSpans.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Date Calculator" Height="184" Width="334" IsManipulationEnabled="False" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Width="311">
+        <DatePicker Height="25" HorizontalAlignment="Left" Margin="184,11,0,0" Name="dpickerStartDate" VerticalAlignment="Top" Width="115" SelectedDateChanged="dpickerStartDate_SelectedDateChanged" />
+        <DatePicker Height="25" HorizontalAlignment="Left" Margin="184,44,0,0" Name="dpickerToDate" VerticalAlignment="Top" Width="115" SelectedDateChanged="dpickerToDate_SelectedDateChanged" />
+        <Label Content="Start Date" Height="28" HorizontalAlignment="Left" Margin="22,11,0,0" Name="label1" VerticalAlignment="Top" Width="86" />
+        <Label Content="To Date" Height="28" HorizontalAlignment="Left" Margin="22,43,0,0" Name="label2" VerticalAlignment="Top" Width="86" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="184,79,0,0" Name="textBox1" VerticalAlignment="Top" Width="115" IsEnabled="False" />
+        <Label Content="Span in Days" Height="25" HorizontalAlignment="Left" Margin="22,77,0,0" Name="label3" VerticalAlignment="Top" />
+        <Label Content="Is in Fortnight block?" Height="28" HorizontalAlignment="Left" Margin="22,103,0,0" Name="label4" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" IsEnabled="False" Margin="184,108,0,0" Name="textBox2" VerticalAlignment="Top" Width="115" />
+    </Grid>
+</Window>
